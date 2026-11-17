@@ -1,0 +1,348 @@
+seed 993
+
+================ GAME ROUND 1 ================
+  A hand: 4♣ 6♣ 6♦ 6♥ 7♠ 8♣ 10♦ J♦ J♥ Q♥ K♦ K♠ 2♠
+  B hand: 4♥ 5♦ 5♥ 6♠ 7♣ 7♦ 9♣ 9♦ 10♥ 10♠ Q♦ K♥ 2♣
+  C hand: 3♣ 3♦ 3♥ 4♦ 5♣ 5♠ 9♥ 9♠ 10♣ J♣ Q♣ Q♠ 2♥
+  D hand: 3♠ 4♠ 7♥ 8♦ 8♥ 8♠ J♠ K♣ A♣ A♦ A♥ A♠ 2♦
+Leader: C (holds 3♣), direction counter-clockwise
+-- card round 1 --
+  C: 3♣ 3♦ 3♥      [must include 3♣]
+  B: pass        
+  A: 6♣ 6♦ 6♥    
+  D: A♣ A♦ A♠    
+  C: pass          [skips B (already passed)]
+  A: pass        
+-- card round 2: D leads --
+  D: 8♦ 8♥ 8♠    
+  C: pass        
+  B: pass        
+  A: pass        
+-- card round 3: D leads --
+  D: 3♠          
+  C: 5♣          
+  B: K♥          
+  A: 2♠          
+  D: pass        
+  C: pass        
+  B: pass        
+-- card round 4: A leads --
+  A: J♦          
+  D: pass          [chooses to pass]
+  C: Q♠          
+  B: 2♣          
+  A: pass          [skips D (already passed)]
+  C: 2♥            [same rank, 2♥ > 2♣ by suit]
+  B: pass        
+-- card round 5: C leads --
+  C: J♣          
+  B: Q♦          
+  A: K♠          
+  D: pass          [chooses to pass]
+  C: pass        
+  B: pass        
+-- card round 6: A leads --
+  A: J♥          
+  D: K♣          
+  C: pass        
+  B: pass        
+  A: K♦            [same rank, K♦ > K♣ by suit]
+  D: 2♦            [skips C,B (already passed)]
+  A: pass        
+-- card round 7: D leads --
+  D: 7♥          
+  C: 9♠          
+  B: pass          [chooses to pass]
+  A: 10♦         
+  D: A♥          
+  C: pass          [skips B (already passed)]
+  A: pass        
+-- card round 8: D leads --
+  D: J♠          
+  C: pass          [chooses to pass]
+  B: pass        
+  A: Q♥          
+  D: pass        
+-- card round 9: A leads --
+  A: 7♠          
+  D: pass        
+  C: 9♥          
+  B: pass          [chooses to pass]
+  A: pass        
+-- card round 10: C leads --
+  C: 10♣         
+  B: 10♥           [same rank, 10♥ > 10♣ by suit]
+  A: pass        
+  D: pass        
+  C: Q♣          
+  B: pass        
+-- card round 11: C leads --
+  C: 5♠          
+  B: pass          [chooses to pass]
+  A: pass          [chooses to pass]
+  D: pass        
+-- card round 12: C leads --
+  C: 4♦            [OUT -> King]
+  B: pass          [chooses to pass]
+  A: 8♣            [beats the card of a player who is out]
+  D: pass        
+-- card round 13: A leads --
+  A: 4♣            [OUT -> Queen]
+  D: pass          [chooses to pass]
+  B: 5♥            [beats the card of a player who is out]
+-- card round 14: B leads --
+  B: 4♥          
+  D: pass          [chooses to pass]
+-- card round 15: B leads --
+  B: 7♣ 7♦       
+  D: pass        
+-- card round 16: B leads --
+  B: 9♣ 9♦       
+  D: pass        
+-- card round 17: B leads --
+  B: 5♦          
+  D: pass        
+-- card round 18: B leads --
+  B: 10♠         
+  D: pass        
+-- card round 19: B leads --
+  B: 6♠            [OUT -> People]
+Result: King C, Queen A, People B, Slave D
+Points so far: A +1, B -1, C +2, D -2
+
+================ GAME ROUND 2 ================
+Exchange: Slave D must give 2 best A♦ 2♠ to King C; People B must give best A♠ to Queen A
+  C (King) picks 5♠ 10♥ to trade (blind)
+  A (Queen) picks 6♥ to trade (blind)
+  A hand: 4♦ 6♠ 7♣ 8♦ 8♥ 8♠ 9♦ 9♥ J♥ Q♦ A♣ A♠ 2♦
+  B hand: 3♣ 3♦ 3♥ 4♥ 6♦ 6♥ 8♣ 9♣ 10♣ J♣ J♦ K♥ A♥
+  C hand: 3♠ 4♣ 7♠ 10♦ J♠ Q♣ Q♥ Q♠ K♦ A♦ 2♣ 2♥ 2♠
+  D hand: 4♠ 5♣ 5♦ 5♥ 5♠ 6♣ 7♦ 7♥ 9♠ 10♥ 10♠ K♣ K♠
+Leader: D (Slave), direction counter-clockwise, reigning King = C
+-- card round 1 --
+  D: 5♦ 5♥ 5♠    
+  C: Q♣ Q♥ Q♠    
+  B: pass        
+  A: pass        
+  D: pass        
+-- card round 2: C leads --
+  C: 2♣ 2♥       
+  B: pass        
+  A: pass        
+  D: pass        
+-- card round 3: C leads --
+  C: J♠          
+  B: 3♣ 3♦ 3♥      [OVERRIDE: 3 cards beat 1]
+  A: 8♦ 8♥ 8♠    
+  D: pass        
+  C: pass        
+  B: pass        
+-- card round 4: A leads --
+  A: 4♦          
+  D: K♣          
+  C: A♦          
+  B: pass          [chooses to pass]
+  A: pass          [chooses to pass]
+  D: pass        
+-- card round 5: C leads --
+  C: K♦          
+  B: pass          [chooses to pass]
+  A: pass          [chooses to pass]
+  D: pass          [chooses to pass]
+-- card round 6: C leads --
+  C: 2♠          
+  B: pass        
+  A: pass        
+  D: pass        
+-- card round 7: C leads --
+  C: 7♠          
+  B: 9♣          
+  A: pass          [chooses to pass]
+  D: pass          [chooses to pass]
+  C: 10♦         
+  B: J♣            [skips A,D (already passed)]
+  C: pass        
+-- card round 8: B leads --
+  B: 8♣          
+  A: Q♦          
+  D: pass          [chooses to pass]
+  C: pass        
+  B: A♥          
+  A: pass          [chooses to pass]
+-- card round 9: B leads --
+  B: K♥          
+  A: A♣          
+  D: pass        
+  C: pass        
+  B: pass        
+-- card round 10: A leads --
+  A: 6♠          
+  D: 7♦          
+  C: pass        
+  B: 10♣         
+  A: J♥          
+  D: pass          [chooses to pass; skips C (already passed)]
+  B: pass        
+-- card round 11: A leads --
+  A: 9♦ 9♥       
+  D: pass          [chooses to pass]
+  C: pass        
+  B: pass        
+-- card round 12: A leads --
+  A: 7♣          
+  D: 10♥         
+  C: pass        
+  B: J♦          
+  A: pass          [chooses to pass]
+  D: K♠            [skips C (already passed)]
+  B: pass        
+-- card round 13: D leads --
+  D: 4♠          
+  C: pass        
+  B: 6♥          
+  A: A♠          
+  D: pass          [skips C (already passed)]
+  B: pass        
+-- card round 14: A leads --
+  A: 2♦            [OUT -> King; King C did not win first -> Slave now]
+  D: pass        
+  B: pass        
+-- card round 15: B leads (winner's card unbeaten: DIRECTION FLIPS to clockwise) --
+  B: 4♥          
+  D: 7♥          
+  B: pass        
+-- card round 16: D leads --
+  D: 9♠          
+  B: pass        
+-- card round 17: D leads --
+  D: 5♣          
+  B: pass          [chooses to pass]
+-- card round 18: D leads --
+  D: 6♣          
+  B: 6♦            [same rank, 6♦ > 6♣ by suit; OUT -> Queen]
+Result: King A, Queen B, People D, Slave C
+Points so far: A +3, B +0, C +0, D -3
+
+================ GAME ROUND 3 ================
+Exchange: Slave C must give 2 best K♣ A♦ to King A; People D must give best 2♠ to Queen B
+  A (King) picks 7♣ 2♦ to trade (blind)
+  B (Queen) picks K♠ to trade (blind)
+  A hand: 3♠ 4♥ 5♣ 5♦ 5♥ 6♣ 6♠ 9♥ J♣ Q♦ K♣ K♦ A♦
+  B hand: 3♣ 3♦ 5♠ 6♦ 7♦ 8♦ 8♠ 9♦ 9♠ A♣ A♥ A♠ 2♠
+  C hand: 4♦ 6♥ 7♣ 7♠ 8♣ 8♥ 9♣ 10♣ 10♦ 10♥ 10♠ J♠ 2♦
+  D hand: 3♥ 4♣ 4♠ 7♥ J♦ J♥ Q♣ Q♥ Q♠ K♥ K♠ 2♣ 2♥
+Leader: C (Slave), direction counter-clockwise, reigning King = A
+-- card round 1 --
+  C: 2♦          
+  B: 2♠            [same rank, 2♠ > 2♦ by suit]
+  A: pass          [chooses to pass]
+  D: Q♣ Q♥ Q♠      [OVERRIDE: 3 cards beat 1]
+  C: pass        
+  B: A♣ A♥ A♠      [skips A (already passed)]
+  D: pass        
+-- card round 2: B leads --
+  B: 9♠          
+  A: pass          [chooses to pass]
+  D: pass          [chooses to pass]
+  C: pass          [chooses to pass]
+-- card round 3: B leads --
+  B: 3♣ 3♦       
+  A: 5♣ 5♥       
+  D: J♦ J♥       
+  C: 10♣ 10♦ 10♥ 10♠  [OVERRIDE: 4 cards beat 2]
+  B: pass        
+  A: pass        
+  D: pass        
+-- card round 4: C leads --
+  C: 8♣ 8♥       
+  B: 8♦ 8♠         [same rank, 8♦ 8♠ > 8♣ 8♥ by suit]
+  A: pass          [chooses to pass]
+  D: K♥ K♠       
+  C: pass        
+  B: pass        
+-- card round 5: D leads --
+  D: 2♣          
+  C: pass        
+  B: pass        
+  A: pass        
+-- card round 6: D leads --
+  D: 4♣          
+  C: 7♠          
+  B: pass          [chooses to pass]
+  A: Q♦          
+  D: pass          [chooses to pass]
+  C: pass        
+-- card round 7: A leads --
+  A: J♣          
+  D: pass          [chooses to pass]
+  C: pass          [chooses to pass]
+  B: pass        
+-- card round 8: A leads --
+  A: A♦          
+  D: pass          [chooses to pass]
+  C: pass        
+  B: pass        
+-- card round 9: A leads --
+  A: K♣          
+  D: 2♥          
+  C: pass        
+  B: pass        
+  A: pass        
+-- card round 10: D leads --
+  D: 4♠          
+  C: 7♣          
+  B: 9♦          
+  A: 9♥            [same rank, 9♥ > 9♦ by suit]
+  D: pass        
+  C: J♠          
+  B: pass        
+  A: pass          [chooses to pass]
+-- card round 11: C leads --
+  C: 4♦          
+  B: 7♦          
+  A: pass          [chooses to pass]
+  D: pass          [chooses to pass]
+  C: pass          [chooses to pass]
+-- card round 12: B leads --
+  B: 5♠          
+  A: K♦          
+  D: pass        
+  C: pass        
+  B: pass        
+-- card round 13: A leads --
+  A: 6♠          
+  D: 7♥          
+  C: pass          [chooses to pass]
+  B: pass        
+  A: pass        
+-- card round 14: D leads --
+  D: 3♥            [OUT -> King; King A did not win first -> Slave now]
+  C: pass          [chooses to pass]
+  B: pass          [chooses to pass]
+-- card round 15: B leads (winner's card unbeaten: DIRECTION FLIPS to clockwise) --
+  B: 6♦            [OUT -> Queen]
+Result: King D, Queen B, People C, Slave A
+Points so far: A +1, B +1, C -1, D -1
+
+================ FINAL ================
+Points per game round (K+2 Q+1 P-1 S-2): C King, A Queen, B People, D Slave | A King, B Queen, D People, C Slave | D King, B Queen, C People, A Slave
+  #1 A  +1  (finished #4 in last game round)
+  #2 B  +1  (finished #2 in last game round)
+  #3 C  -1  (finished #3 in last game round)
+  #4 D  -1  (finished #1 in last game round)
+
+Rules used:
+  [x] first lead includes 3♣
+  [x] pair played
+  [x] triple played
+  [x] same rank beaten by higher suit
+  [x] passed player skipped until card round ends
+  [x] winner's last card beaten -> direction stays
+  [x] winner's last card unbeaten -> direction flips
+  [x] King not first -> Slave immediately
+  [x] exchange before game rounds 2-3
+  [x] tied total broken by later finish in last round
+  [x] same-rank pair beaten by higher top suit
+  [x] triple overrides a single
+  [x] quad overrides a pair
+  [x] higher triple beats triple after override
