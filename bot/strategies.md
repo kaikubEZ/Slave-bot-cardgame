@@ -47,6 +47,8 @@ Template for results:
 | `override_hoarder` | Never lead a triple/quad; keep them only for overrides. Plays them as overrides when hand ≤ 6 or an opponent has ≤ 3 cards. |
 | `override_never` | Never override; triples and quads are only led. |
 
+| `low_then_power` | **(Kai's bet)** Play only low cards: lead and follow with the lowest whole group, but never play a 2, an Ace, a triple or a quad (not even as an override) while hand > 5 cards — pass instead. Once hand ≤ 5, unleash them: overrides allowed, power cards played freely. |
+
 ## 3. Card counting
 | ID | Rule |
 |---|---|
@@ -82,8 +84,20 @@ Template for results:
 |---|---|
 | `mc_lowest` | Monte Carlo: deal the unseen cards randomly to opponents (matching card counts and exchange knowledge), play each legal move out with `lowest` for all players, pick the move with the best average final place. Stop at 0.9 s. |
 | `mc_smart` | Same, but rollouts use the best heuristic bot found so far. |
-| `ismcts` | Information-Set Monte Carlo Tree Search over the same sampled worlds; stop at 0.9 s. |
+| `ismcts` | Information-Set Monte Carlo Tree Search over the same sampled worlds (UCB1, c = 0.7; `lowest` playouts); stop at 0.9 s. Expect: / Test: / Result: |
+| `mc_read` | `mc_lowest` with worlds weighted by q^(voluntary passes): a pass while holding a legal set is unlikely (rejection sampling; variants q = 0.1 / 0.3 / 0.6). Expect: / Test: / Result: |
+| `mc_counter` | `mc_lowest`, but every player in a playout plays `counter`'s rule (unseen cards tracked from the cards played). Expect: / Test: / Result: |
+| `mc_end` | `mc_lowest`, but once I hold <= 5 cards each playout solves my own remaining moves exhaustively (opponents play `lowest`). Expect: / Test: / Result: |
+| `mc_trade` | `mc_lowest`, but as King/Queen the gift is searched: each k-subset of my 6 lowest cards is tried over random deals of the other 39 cards (partner gives their best k), the round is played out with `lowest`, best average wins. Expect: / Test: / Result: |
 | `rl_selfplay` | Later: a learned policy trained by self-play against the pool. |
+
+## Bets
+| Who | Bet | Why |
+|---|---|---|
+| Kai | `low_then_power` finishes with the best average rank | Cheap cards go first; the power saved for the end wins the last card rounds and gets you out. |
+| Claude | `counter` beats `low_then_power` | Power only helps if nobody holds bigger. Counting tells `counter` exactly when its set is a boss, so it spends power at the right moment instead of at a fixed hand size, and it never passes away the lead while waiting. |
+
+Settle with a focused test: `low_then_power` vs `counter` + 2 random fillers, same seeds, until the ranges stop overlapping.
 
 ## Questions these bots answer
 - Does passing ever help? `random` vs `random_nopass`, `lowest` vs `pair_keeper`.
